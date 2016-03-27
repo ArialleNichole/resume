@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arialle Dye</title>
+    <link rel="manifest" href="/assets/images/gothpink.png">
+  </head>
+  <body>
+    <div class="headingbox" id="top">
+      <div class="headingimg">
+        <a href="/"><%= image_tag "gothpink.png" %></a>
+      </div>
+      <%= render 'layouts/navbar' %>
+    </div>
+    <div class="row">
+      <div class="container">
+
+        <%= yield %>
+
+      </div> <!-- container -->
+    </div> <!-- row -->
+    <%= render 'layouts/footer' %>
+  </body>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+</html>
