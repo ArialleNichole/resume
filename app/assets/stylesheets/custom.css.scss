@@ -1,4 +1,4 @@
-/*CSS - Being Called by Application.CSS*/
+f/*CSS - Being Called by Application.CSS*/
 
 
 body {
@@ -21,9 +21,16 @@ p {
 }
 
 a {
-  color: inherit;
+  color: rgba(107, 163, 47, 0.55);
 }
 
+footer a {
+  color: #fff;
+}
+
+.card-image a {
+  color: rgba(0, 0, 0, 0.87);
+}
 
 nav {
   background-color: #2b2b2b;
@@ -201,7 +208,7 @@ input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, 
   width: 150px;
   text-align: center;
 }
-.sendhover {
+.send:hover {
   background-color: rgba(47, 162, 160, 0.55);
 }
 
@@ -315,3 +322,11 @@ footer.page-footer {
 {.container {
     width: 90%;
 }}
+
+
+/* Images */
+.circleimg {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
